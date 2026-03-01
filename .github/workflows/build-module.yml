@@ -12,11 +12,11 @@ jobs:
     strategy:
       matrix:
         build_env:
-          tag: "24.10.5"
-          pkgarch: arm_cortex-a7_neon-vfpv4
-          target: ipq40xx
-          subtarget: generic
-          vermagic: "eaef302ef5ab82928154706763925f63-r1"
+          - tag: "24.10.5"
+            pkgarch: arm_cortex-a7_neon-vfpv4
+            target: ipq40xx
+            subtarget: generic
+            vermagic: "eaef302ef5ab82928154706763925f63-r1"
 
     steps:
       - uses: actions/checkout@v4
